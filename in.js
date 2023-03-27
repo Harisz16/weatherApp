@@ -19,7 +19,7 @@ btn.addEventListener("click", () => {
     .then((response) => response.json())
     .then((data) => {
       if ((data.cod = "404")) {
-        img.src = `/images/404.png`;
+        img.src = `404.png`;
         // con.style.height = "400px";
         lan.innerHTML = "";
         cloud.innerHTML = "";
@@ -38,6 +38,6 @@ btn.addEventListener("click", () => {
       console.log(data.coord);
       // con.style.height = "400px";
       // con.style.overflow = "";
-      img.src = __dirname+`/images/${data.weather[0].main}.png`;
+      img.src = `${data.weather[0].main}.png`;
     });
 });
