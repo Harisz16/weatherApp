@@ -38,6 +38,6 @@ btn.addEventListener("click", () => {
       console.log(data.coord);
       // con.style.height = "400px";
       // con.style.overflow = "";
-      img.src = `/images/${data.weather[0].main}.png`;
+      img.src = __dirname+`/images/${data.weather[0].main}.png`;
     });
 });
